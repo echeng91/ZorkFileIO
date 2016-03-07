@@ -23,7 +23,6 @@ public class MainRoom {
 	//File IO
 	static File file = new File("zork");
 	static PrintWriter pw;
-	//static FileReader fr;
 	static {
 		try
 		{
@@ -80,6 +79,10 @@ public class MainRoom {
 			{
 				displayHistory();
 			}
+			else if (choice.equalsIgnoreCase("map"))
+			{
+				displayMap();
+			}
 			if(exiting)
 			{
 				break;
@@ -125,6 +128,10 @@ public class MainRoom {
 			{
 				displayHistory();
 			}
+			else if (choice.equalsIgnoreCase("map"))
+			{
+				displayMap();
+			}
 			if(exiting)
 			{
 				break;
@@ -165,6 +172,10 @@ public class MainRoom {
 			else if (choice.equalsIgnoreCase("history"))
 			{
 				displayHistory();
+			}
+			else if (choice.equalsIgnoreCase("map"))
+			{
+				displayMap();
 			}
 			if(exiting)
 			{
@@ -207,6 +218,10 @@ public class MainRoom {
 			{
 				displayHistory();
 			}
+			else if (choice.equalsIgnoreCase("map"))
+			{
+				displayMap();
+			}
 			if(exiting)
 			{
 				break;
@@ -244,6 +259,10 @@ public class MainRoom {
 			else if (choice.equalsIgnoreCase("history"))
 			{
 				displayHistory();
+			}
+			else if (choice.equalsIgnoreCase("map"))
+			{
+				displayMap();
 			}
 			if(exiting)
 			{
@@ -299,6 +318,10 @@ public class MainRoom {
 			{
 				displayHistory();
 			}
+			else if (choice.equalsIgnoreCase("map"))
+			{
+				displayMap();
+			}
 			if(exiting)
 			{
 				break;
@@ -340,6 +363,10 @@ public class MainRoom {
 			{
 				displayHistory();
 			}
+			else if (choice.equalsIgnoreCase("map"))
+			{
+				displayMap();
+			}
 			if(exiting)
 			{
 				break;
@@ -376,6 +403,10 @@ public class MainRoom {
 			else if (choice.equalsIgnoreCase("history"))
 			{
 				displayHistory();
+			}
+			else if (choice.equalsIgnoreCase("map"))
+			{
+				displayMap();
 			}
 			if(exiting)
 			{
@@ -628,7 +659,8 @@ public class MainRoom {
 	}
 
 	public static void main(String[] args) {
-		System.out.println("Welcome to the House of Fun. At any time, type \'history\' to view history.\n");
+		System.out.println("Welcome to the House of Fun.");
+		System.out.println("At any time, type \'history\' to view history or \'map\' to display a map.\n");
 		room1();
 		darkly.close();
 		pw.close();
