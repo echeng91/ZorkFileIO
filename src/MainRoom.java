@@ -489,7 +489,7 @@ public class MainRoom {
 
 	public static void displayMap()
 	{
-		for(int i = 0; i < 5; i++)
+		for(int i = 0; i < 7; i++)
 		{
 			//Dining Room
 			if(roomVisitedFlag[4])
@@ -497,12 +497,12 @@ public class MainRoom {
 				switch(i)
 				{
 				case 0: 
-				case 4: System.out.print("*****************");
-					break;
+				case 6: System.out.print("*****************");
+				break;
 				case 1: System.out.print("*Dining Room\t*");
-					break;
+				break;
 				default: System.out.print("*\t\t*");
-					break;
+				break;
 				}
 			}
 			else
@@ -516,12 +516,12 @@ public class MainRoom {
 				switch(i)
 				{
 				case 0: 
-				case 4: System.out.print("****************");
-					break;
+				case 6: System.out.print("****************");
+				break;
 				case 1: System.out.print("*Vault\t\t*");
-					break;
+				break;
 				default: System.out.print("*\t\t*");
-					break;
+				break;
 				}
 			}
 			else
@@ -538,16 +538,18 @@ public class MainRoom {
 					switch(i)
 					{
 					case 0: 
-					case 4: System.out.print("****************");
-						break;
+					case 6: System.out.print("****************");
+					break;
 					case 1: System.out.print("*Parlor\t*");
-						break;
-					case 2: System.out.print("********\t*");
-					 break;
-					case 3: System.out.print("*Secret*\t*");
-					 break;
+					break;
+					case 3: System.out.print("********\t*");
+					break;
+					case 4: System.out.print("*Secret*\t*");
+					break;
+					case 5: System.out.print("*      *\t*");
+					break;
 					default: System.out.print("*\t\t*");
-						break;
+					break;
 					}
 				}
 				else
@@ -555,12 +557,12 @@ public class MainRoom {
 					switch(i)
 					{
 					case 0: 
-					case 4: System.out.print("****************");
-						break;
+					case 6: System.out.print("****************");
+					break;
 					case 1: System.out.print("*Parlor\t*");
-						break;
+					break;
 					default: System.out.print("*\t\t*");
-						break;
+					break;
 					}
 				}
 			}
@@ -571,7 +573,7 @@ public class MainRoom {
 			System.out.println();
 		}
 
-		for(int j = 0; j < 5; j++)
+		for(int j = 0; j < 7; j++)
 		{
 			//Library
 			if(roomVisitedFlag[2])
@@ -579,12 +581,12 @@ public class MainRoom {
 				switch(j)
 				{
 				case 0: 
-				case 4: System.out.print("*****************");
-					break;
+				case 6: System.out.print("*****************");
+				break;
 				case 1: System.out.print("*Library\t*");
-					break;
+				break;
 				default: System.out.print("*\t\t*");
-					break;
+				break;
 				}
 			}
 			else
@@ -598,12 +600,12 @@ public class MainRoom {
 				switch(j)
 				{
 				case 0: 
-				case 4: System.out.print("****************");
-					break;
+				case 6: System.out.print("****************");
+				break;
 				case 1: System.out.print("*Front Room\t*");
-					break;
+				break;
 				default: System.out.print("*\t\t*");
-					break;
+				break;
 				}
 			}
 			else
@@ -617,12 +619,12 @@ public class MainRoom {
 				switch(j)
 				{
 				case 0: 
-				case 4: System.out.print("****************");
-					break;
+				case 6: System.out.print("****************");
+				break;
 				case 1: System.out.print("*Kitchen\t*");
-					break;
+				break;
 				default: System.out.print("*\t\t*");
-					break;
+				break;
 				}
 			}
 			else
@@ -632,7 +634,7 @@ public class MainRoom {
 			System.out.println();
 		}
 
-		for(int k = 0; k < 5; k++)
+		for(int k = 0; k < 7; k++)
 		{
 			System.out.print(" \t\t ");
 			//Foyer
@@ -641,12 +643,12 @@ public class MainRoom {
 				switch(k)
 				{
 				case 0: 
-				case 4: System.out.print("****************");
-					break;
+				case 6: System.out.print("****************");
+				break;
 				case 1: System.out.print("*Foyer\t\t*");
-					break;
+				break;
 				default: System.out.print("*\t\t*");
-					break;
+				break;
 				}
 			}
 			else
